@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Personal Portfolio</title>
-
-  <!--
+    <!--
     - favicon
   -->
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
-  <!-- <div class="main-header">
+  <body>
+    <!-- <div class="main-header">
     <div class="container">
       <span class="header-title">Hello</span>
 
@@ -39,53 +40,54 @@
     </div>
 
   </div> -->
-  <!--
+    <!--
     - #MAIN
   -->
 
-  <main>
-    <!--
+    <main>
+      <!--
       - #SIDEBAR
     -->
 
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img src="./assets/images/Capture.PNG" alt="" width="80" />
+          </figure>
 
-    <aside class="sidebar" data-sidebar>
-      <div class="sidebar-info">
-        <figure class="avatar-box">
-          <img src="./assets/images/Capture.PNG" alt="Richard hanrick" width="80" />
-        </figure>
+          <div class="info-content">
+            <h1 class="name" title="Gautam Magar">Gautam Magar</h1>
 
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Gautam Magar</h1>
+            <p class="title">Frontend-developer</p>
+          </div>
 
-          <p class="title">Frontend-developer</p>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span style="color: #b2ecff">Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span style="color: #b2ecff;">Show Contacts</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-      </div>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <img src="./assets/images/mail.png" alt="" width="50%" />
+                <!-- <ion-icon name="mail-outline"></ion-icon> -->
+              </div>
 
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-        <ul class="contacts-list ">
-          <li class="contact-item">
-            <div class="icon-box">
-              <img src="./assets/images/mail.png" alt="" width="50%">
-              <!-- <ion-icon name="mail-outline"></ion-icon> -->
-            </div>
+                <a href="mailto:puskarmagar687@gmail.com" class="contact-link"
+                  >puskarmagar687@gmail.com</a
+                >
+              </div>
+            </li>
 
-            <div class="contact-info ">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:puskarmagar687@gmail.com" class="contact-link">puskarmagar687@gmail.com</a>
-            </div>
-          </li>
-
-          <!-- <li class="contact-item">
+            <!-- <li class="contact-item">
 
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
@@ -113,174 +115,186 @@
 
           </li> -->
 
-          <li class="contact-item">
-            <div class="icon-box">
-              <img src="./assets//images/location.png" alt="">
-              <!-- <ion-icon name="location-outline"></ion-icon> -->
-            </div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <img src="./assets//images/location.png" alt="" />
+                <!-- <ion-icon name="location-outline"></ion-icon> -->
+              </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
-              <address>Dillibazar, Kathmandu, Nepal</address>
-            </div>
-          </li>
-        </ul>
+                <address>Dillibazar, Kathmandu, Nepal</address>
+              </div>
+            </li>
+          </ul>
 
-        <div class="separator"></div>
+          <div class="separator"></div>
 
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://linkedin.com/in/gautammagar"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
 
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
+            <li class="social-item">
+              <a
+                href="https://github.com/Hello-9999"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
 
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </aside>
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>About</button>
-          </li>
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Projects</button>
+            </li>
 
-          <!-- <li class="navbar-item">
+            <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Blog</button>
           </li> -->
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-        </ul>
-      </nav>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
 
-      <!--
+        <!--
         - #ABOUT
       -->
 
-      <article class="about active" data-page="about">
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-        <section class="about-text">
-          <!-- <p>
+          <section class="about-text">
+            <!-- <p>
               I'm Creative Director and UI/UX Designer from Sydney, Australia,
               working in web development and print media. I enjoy turning
               complex problems into simple, beautiful and intuitive designs.
             </p> -->
 
-          <p>
-            Hey, I'm Gautam Magar , learning to make websites look cool and work
-            well. I recently completed a 3 month Frontend with React development course at <b>Vrit Technologies
-            </b> and now I'm studying Bachelor In Information Technology (BIT) to learn even more.
+            <p>
+              Hey, I'm Gautam Magar , learning to make websites look cool and
+              work well. I recently completed a 3 month Frontend with React
+              development course at <b>Vrit Technologies </b> and now I'm
+              studying Bachelor In Information Technology (BIT) to learn even
+              more.
+            </p>
 
-          </p>
+            <p>
+              I really like using dark colors in my designs – makes websites
+              look cool and classy. Even though I haven't worked professionally
+              yet, I'm super excited to turn code into awesome websites.
+            </p>
+            <p>
+              I'm on the lookout for an internship to get some hands-on
+              experience. If you have a project where I can learn and
+              contribute, let's team up and make something awesome together !!
+            </p>
+          </section>
 
-          <p>
-            I really like using dark colors in my designs – makes websites
-            look cool and classy. Even though I haven't worked professionally
-            yet, I'm super excited to turn code into awesome websites.
-          </p>
-          <p>
-            I'm on the lookout for an internship to get some hands-on
-            experience. If you have a project where I can learn and
-            contribute, let's team up and make something awesome together!
-          </p>
-        </section>
-
-        <!--
+          <!--
           - service
         -->
 
-        <section class="service">
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
 
-          <ul class="service-list">
-           
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/dynamic.png"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
 
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/dynamic.png" alt="Web development icon" width="40" />
-              </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">dynamic website</h4>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">dynamic website</h4>
+                  <p class="service-item-text">
+                    Crafting dynamic websites that respond and adapt to user
+                    interactions in real-time. From seamless animations to
+                    dynamic content updates, every line of code contributes to
+                    an engaging user experience.
+                  </p>
+                </div>
+              </li>
 
-                <p class="service-item-text">
-                  Crafting dynamic websites that respond and adapt to user
-                  interactions in real-time. From seamless animations to
-                  dynamic content updates, every line of code contributes to
-                  an engaging user experience.
-                </p>
-              </div>
-            </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/responsive.png"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
 
-            <li class="service-item">
-              <div class="service-icon-box">
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Responsive</h4>
 
-                <img src="./assets/images/responsive.png" alt="mobile app icon" width="40">
-              </div>
+                  <p class="service-item-text">
+                    I specialize developing responsive websites, ensuring that
+                    your online presence looks and functions flawlessly across
+                    various devices. From mobile phones to desktops.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/framework.png
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Responsive</h4>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Exploring Modern Frameworks and Libraries
+                  </h4>
 
-                <p class="service-item-text">
-                  I specialize developing responsive websites, ensuring that
-                  your online presence looks and functions flawlessly across
-                  various devices. From mobile phones to desktops.
-                </p>
-              </div>
-            </li>
-            <li class="service-item" >
-              <div class="service-icon-box">
-                <img src="./assets/images/framework.png
-                " alt="design icon" width="40" />
-              </div>
+                  <p class="service-item-text">
+                    Delving into popular frontend frameworks and libraries to
+                    broaden my toolkit.
+                  </p>
+                </div>
+              </li>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">
-                  Exploring Modern Frameworks and Libraries
-                </h4>
-
-                <p class="service-item-text">
-                  Delving into popular frontend frameworks and libraries to
-                  broaden my toolkit.
-                </p>
-              </div>
-            </li>
-
-            <!-- <li class="service-item">
+              <!-- <li class="service-item">
               <div class="service-icon-box">
                 <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40" />
               </div>
@@ -294,14 +308,14 @@
                 </p>
               </div>
             </li> -->
-          </ul>
-        </section>
+            </ul>
+          </section>
 
-        <!--
+          <!--
           - testimonials
         -->
 
-        <!-- <section class="testimonials">
+          <!-- <section class="testimonials">
 
           <h3 class="h3 testimonials-title">Testimonials</h3>
 
@@ -399,11 +413,11 @@
 
         </section> -->
 
-        <!--
+          <!--
           - testimonials modal
         -->
 
-        <!-- <div class="modal-container" data-modal-container>
+          <!-- <div class="modal-container" data-modal-container>
 
           <div class="overlay" data-overlay></div>
 
@@ -443,11 +457,11 @@
 
         </div> -->
 
-        <!--
+          <!--
           - clients
         -->
 
-        <!-- <section class="clients">
+          <!-- <section class="clients">
             <h3 class="h3 clients-title">Clients</h3>
 
             <ul class="clients-list has-scrollbar">
@@ -506,57 +520,57 @@
               </li>
             </ul>
           </section> -->
-      </article>
+        </article>
 
-      <!--
+        <!--
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
 
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <img src="./assets/images/reading.png" alt="" width="50%">
-              <!-- <ion-icon name="book-outline"></ion-icon> -->
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <img src="./assets/images/reading.png" alt="" width="50%" />
+                <!-- <ion-icon name="book-outline"></ion-icon> -->
+              </div>
+
+              <h3 class="h3">Education</h3>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Bachelor | Phoenix College of Management
+                </h4>
 
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                Bachelor | Phoenix College of Management
-              </h4>
+                <span>2023 — Present</span>
 
-              <span>2023 — Present</span>
+                <p class="timeline-text">
+                  Currently studying in the Bachelor of Information Technology
+                  (BIT) program.
+                </p>
+              </li>
 
-              <p class="timeline-text">
-                Currently studying in the Bachelor of Information Technology
-                (BIT) program.
-              </p>
-            </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  SLC | The New Summit Secondary School
+                </h4>
 
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">
-                SLC |   The New Summit Secondary School
-              </h4>
+                <span>2021 — 2023</span>
 
-              <span>2021 — 2023</span>
+                <p class="timeline-text">
+                  Completed my Plus 2 in the management stream with a focus on
+                  computer science.
+                </p>
+              </li>
+            </ol>
+          </section>
 
-              <p class="timeline-text">
-                Completed my Plus 2 in the management stream with a focus on
-                computer science.
-              </p>
-            </li>
-          </ol>
-        </section>
-
-        <!-- <section class="timeline">
+          <!-- <section class="timeline">
 
           <div class="title-wrapper">
             <div class="icon-box">
@@ -614,30 +628,36 @@
 
         </section> -->
 
-        <section class="skill">
-          <h3 class="h3 skills-title">My skills</h3>
-          <ul>
-            <li>
-              <a href="#"> <img src="./assets/images/html.svg" alt="" /></a>
-            </li>
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+            <ul>
+              <li>
+                <a href="#"> <img src="./assets/images/html.svg" alt="" /></a>
+              </li>
 
-            <li><img src="./assets/images/css3-svgrepo-com.svg" alt="" /></li>
-            <li><img src="./assets/images/js-svgrepo-com.svg" alt="" /></li>
+              <li><img src="./assets/images/css3-svgrepo-com.svg" alt="" /></li>
+              <li><img src="./assets/images/js-svgrepo-com.svg" alt="" /></li>
 
-            <li>
-              <img src="./assets/images/bootstrap-fill-svgrepo-com.svg" alt="" />
-            </li>
+              <li>
+                <img
+                  src="./assets/images/bootstrap-fill-svgrepo-com.svg"
+                  alt=""
+                />
+              </li>
 
-            <li>
-              <img src="./assets/images/react-javascript-js-framework-facebook-svgrepo-com.svg" alt="" />
-            </li>
+              <li>
+                <img
+                  src="./assets/images/react-javascript-js-framework-facebook-svgrepo-com.svg"
+                  alt=""
+                />
+              </li>
 
-            <li>
-              <img src="./assets/images/redux-svgrepo-com.svg" alt="" />
-            </li>
-          </ul>
+              <li>
+                <img src="./assets/images/redux-svgrepo-com.svg" alt="" />
+              </li>
+            </ul>
 
-          <!-- <ul class="skills-list content-card">
+            <!-- <ul class="skills-list content-card">
               <li class="skills-item">
                 <div class="title-wrapper">
                   <h5 class="h5">Web design</h5>
@@ -682,20 +702,20 @@
                 </div>
               </li>
             </ul> -->
-        </section>
-      </article>
+          </section>
+        </article>
 
-      <!--
+        <!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
+        <article class="Projects" data-page="Projects">
+          <header>
+            <h2 class="h2 article-title">My Projects</h2>
+          </header>
 
-        <section class="projects">
-          <!-- <ul class="filter-list">
+          <section class="portfolio">
+            <!-- <ul class="filter-list">
               <li class="filter-item">
                 <button class="active" data-filter-btn>All</button>
               </li>
@@ -743,78 +763,110 @@
               </ul>
             </div> -->
 
-          <ul class="project-list">
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy" />
-                </figure>
+                    <img
+                      src="./assets/images/project-1.jpg"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <h3 class="project-title">CryptoPanda</h3>
+                  <h3 class="project-title">CryptoPanda</h3>
 
-                <p class="project-category">Trading Website</p>
-              </a>
-            </li>
+                  <p class="project-category">Trading Website</p>
+                </a>
+              </li>
 
-            <li class="project-item active" data-filter-item data-category="web development">
-              <a href="#">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy" />
-                </figure>
+                    <img
+                      src="./assets/images/project-2.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <h3 class="project-title">EazyBazar</h3>
+                  <h3 class="project-title">EazyBazar</h3>
 
-                <p class="project-category">E-commerce Website</p>
-              </a>
-            </li>
+                  <p class="project-category">E-commerce Website</p>
+                </a>
+              </li>
 
-            <li class="project-item active" data-filter-item data-category="web design">
-              <a href="https://weatherhubnp.netlify.app" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://weatherhubnp.netlify.app" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy" />
-                </figure>
+                    <img
+                      src="./assets/images/project-3.jpg"
+                      alt="fundo"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <h3 class="project-title">Weather Hub</h3>
+                  <h3 class="project-title">Weather Hub</h3>
 
-                <p class="project-category">Weather Website</p>
-              </a>
-            </li>
+                  <p class="project-category">Weather Website</p>
+                </a>
+              </li>
 
-            <li class="project-item active" data-filter-item data-category="applications">
-              <a href="https://counter-tally.netlify.app" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="https://counter-tally.netlify.app" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy" />
-                </figure>
+                    <img
+                      src="./assets/images/project-4.png"
+                      alt="brawlhalla"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                <h3 class="project-title">Counter</h3>
+                  <h3 class="project-title">Counter</h3>
 
-                <p class="project-category">Tally-Counter Website</p>
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
+                  <p class="project-category">Tally-Counter Website</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-      <!--
+        <!--
         - #BLOG
       -->
-      <!-- 
+        <!-- 
       <article class="blog" data-page="blog">
 
         <header>
@@ -999,108 +1051,133 @@
 
       </article> -->
 
-      <!--
+        <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <!-- <iframe
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <!-- <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
                 width="400"
                 height="300"
                 loading="lazy"
               ></iframe> -->
 
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7929.5610992394495!2d85.3197806684598!3d27.704121456707668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a77f1ab301%3A0xb213d09ebce4b3da!2sDillibazar!5e1!3m2!1sen!2snp!4v1700416569553!5m2!1sen!2snp"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7929.5610992394495!2d85.3197806684598!3d27.704121456707668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a77f1ab301%3A0xb213d09ebce4b3da!2sDillibazar!5e1!3m2!1sen!2snp!4v1700416569553!5m2!1sen!2snp"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
 
-        <section class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input />
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required
-                data-form-input />
-            </div>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn onclick="submit">
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-          </form>
-        </section>
-      </article>
-    </div>
-  </main>
+              <button
+                class="form-btn"
+                type="submit"
+                disabled
+                data-form-btn
+                onclick="submit"
+              >
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/Type.js"></script>
-  <script src="./assets//js//test.js"></script>
+    <script src="./assets/js/Type.js"></script>
+    <script src="./assets//js//test.js"></script>
 
+    <script>
+      const submitBtn = document.querySelector("[data-form-btn]");
+      const formInput = document.querySelectorAll("[data-form-input]");
+      //  console.log(submitBtn)
+      // const form = document.querySelector("[data-form]")
 
-  <script>
-    const submitBtn = document.querySelector("[data-form-btn]");
-    const formInput = document.querySelectorAll("[data-form-input]");
-    //  console.log(submitBtn)
-    // const form = document.querySelector("[data-form]")
+      const form = document.querySelector("[data-form]");
+      const formInputs = document.querySelectorAll("[data-form-input]");
+      const formBtn = document.querySelector("[data-form-btn]");
 
-    const form = document.querySelector("[data-form]");
-    const formInputs = document.querySelectorAll("[data-form-input]");
-    const formBtn = document.querySelector("[data-form-btn]");
+      for (let i = 0; i < formInput.length; i++) {
+        formInput[i].addEventListener("input", function () {
+          console.log(formInput[i].value);
+          if (form.checkValidity()) {
+            console.log(formInput[i]);
+            submitBtn.removeAttribute("disabled");
+          } else {
+            submitBtn.setAttribute("disabled", "");
+          }
+          submitBtn.addEventListener("click", function () {
+            console.log(formInput[i]);
 
-    for (let i = 0; i < formInput.length; i++) {
-      formInput[i].addEventListener("input", function () {
-        console.log(formInput[i].value);
-        if (form.checkValidity()) {
-          console.log(formInput[i]);
-          submitBtn.removeAttribute("disabled");
-        } else {
-          submitBtn.setAttribute("disabled", "");
-        }
-        submitBtn.addEventListener("click", function () {
-          console.log(formInput[i]);
-
-          debugger;
+            debugger;
+          });
         });
+      }
+
+      // const Toglefunction
+      const togglebtn = document.querySelector("[data-sidebar-btn]");
+      const sidebar = document.querySelector("[data-sidebar]");
+
+      togglebtn.addEventListener("click", function () {
+        sidebar.classList.toggle("active");
       });
-    }
-
-    // const Toglefunction 
-    const togglebtn = document.querySelector('[data-sidebar-btn]')
-    const sidebar = document.querySelector("[data-sidebar]");
-
-    togglebtn.addEventListener("click", function () {
-      sidebar.classList.toggle("active")
-
-
-    })
-
-
-
-
-  
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
