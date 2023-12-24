@@ -769,7 +769,7 @@
                 data-filter-item
                 data-category="web development"
               >
-                <a href="https://crypto-panda.vercel.app/" target="_self" >
+                <a href="https://crypto-panda.vercel.app/" target="_self">
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
@@ -1063,13 +1063,6 @@
 
           <section class="mapbox" data-mapbox>
             <figure>
-              <!-- <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-                width="400"
-                height="300"
-                loading="lazy"
-              ></iframe> -->
-
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7929.5610992394495!2d85.3197806684598!3d27.704121456707668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a77f1ab301%3A0xb213d09ebce4b3da!2sDillibazar!5e1!3m2!1sen!2snp!4v1700416569553!5m2!1sen!2snp"
                 width="400"
@@ -1082,7 +1075,13 @@
           <section class="contact-form">
             <h3 class="h3 form-title">Contact Form</h3>
 
-            <form action="#" class="form" data-form>
+            <form
+              class="form"
+              data-form
+              action="https://formspree.io/f/xkndwyzj"
+              method="POST"
+              enctype="multipart/form-data"
+            >
               <div class="input-wrapper">
                 <input
                   type="text"
@@ -1138,6 +1137,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
 
     <!--
     - custom js link
@@ -1179,6 +1179,76 @@
       togglebtn.addEventListener("click", function () {
         sidebar.classList.toggle("active");
       });
+
+      window.formbutton =
+        window.formbutton ||
+        function () {
+          (formbutton.q = formbutton.q || []).push(arguments);
+        };
+      formbutton("create", {
+        onResponse: function (ok, setStatus) {
+          if (ok) {
+            setStatus(
+              " <span style='color:green'> Message delivered! Thanks for reaching out! 🚀 </span>"
+            );
+          } else {
+            setStatus(
+              "<span style='color:red'>There was a problem. We've been notified.</span>"
+            );
+          }
+        },
+
+        theme: "classic",
+        action: "https://formspree.io/f/xkndwyzj",
+        title: "Let's Create Together! 🚀",
+        description:
+          "Have a project idea or a creative spark? Drop us a line, and let's make something awesome! 🌟",
+        fields: [
+          {
+            type: "text",
+            label: "Name:",
+            name: "name",
+            required: true,
+            placeholder: "enter your name ",
+          },
+          {
+            type: "email",
+            label: "Email:",
+            name: "email",
+            required: true,
+            placeholder: "your@email.com",
+          },
+
+          {
+            type: "textarea",
+            label: "Message:",
+            name: "message",
+            placeholder: "What's on your mind?",
+          },
+          { type: "submit" },
+        ],
+        styles: {
+          fontFamily: '"Lato", sans-serif',
+
+          title: {
+            backgroundColor: "#1e1e1f",
+            color: "#6bdaff",
+          },
+          button: {
+            backgroundColor: "#282829",
+          },
+          description: {
+            backgroundColor: "#242425",
+            color: "aliceblue",
+            fontFamily: '"Lato", sans-serif',
+            lineHeight: "1.6rem",
+          },
+          // modal: {
+          //   backgroundColor: "#282829",
+          // },
+        },
+      });
     </script>
+    <style></style>
   </body>
 </html>
